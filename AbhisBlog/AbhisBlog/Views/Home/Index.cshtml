@@ -5,5 +5,17 @@
 <div class="jumbotron">
     <h1>Abhi's Blog</h1>
     <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://au.linkedin.com/in/abhid94" class="btn btn-primary btn-lg">Linkedin &raquo;</a></p>
+    <p><a href="https://au.linkedin.com/in/abhid94" target="_blank" class="btn btn-primary btn-lg">Linkedin &raquo;</a></p>
+   
+    <p>
+        <a href='@Url.Action("Create", "Blogs")'>
+            <img src='@Url.Content("~/Content/Images/create.png")' />
+        </a>
+        <br/>
+        <br/>
+        <a href='@Url.Action("Index", "Blogs")'>
+            <img src='@Url.Content("~/Content/Images/view.png")' />
+        </a>
+    </p>
+
 </div>

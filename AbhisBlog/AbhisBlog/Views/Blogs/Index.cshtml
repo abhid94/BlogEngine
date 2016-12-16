@@ -4,11 +4,15 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<br />
+<br />
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <a href='@Url.Action("Create")'>
+        <img src='@Url.Content("~/Content/Images/create.png")' />
+    </a>
 </p>
+<br />
 <table class="table">
     <tr>
         <th>
